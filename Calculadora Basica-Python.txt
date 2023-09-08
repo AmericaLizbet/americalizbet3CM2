@@ -1,0 +1,48 @@
+num1 = int(input("Introduzca su primer numero: "))
+num2 = int(input("Introduzca su segundo numero: "))
+op = 0
+
+import time
+inicio = time.time()
+
+while op != 5:
+
+    print("Menu")
+    print("1. Suma")
+    print("2. Resta")
+    print("3. Multiplicacion")
+    print("4. Division")
+    print("5. SALIR")
+
+    opcion = int(input("Seleccione una Opcion: "))
+    if opcion == 1 :
+        suma = num1 + num2
+        print("El resultado de la suma es: ", suma)
+        fin = time.time()
+        tiempo_ejecutado = fin - inicio
+        print("El tiempo ejecutado para esta opcion es: ",tiempo_ejecutado)
+    elif opcion == 2 :
+        resta = num1 - num2
+        print("El resultado de la resta es: ", resta)
+        fin = time.time()
+        tiempo_ejecutado = fin - inicio
+        print("El tiempo ejecutado para esta opcion es: ",tiempo_ejecutado)
+    elif opcion == 3 :
+        multiplicacion = num1 * num2
+        print("El resultado de la multiplicacion es: ", multiplicacion)
+        fin = time.time()
+        tiempo_ejecutado = fin - inicio
+        print("El tiempo ejecutado para esta opcion es: ",tiempo_ejecutado)
+    elif opcion == 4 :
+        division = num1 / num2
+        print("El resultado de la division es: ", division)
+        fin = time.time()
+        tiempo_ejecutado = fin - inicio
+        print("El tiempo ejecutado para esta opcion es: ",tiempo_ejecutado)
+    else:
+        print("Saliendo del Programa :)")
+        fin = time.time()
+        tiempo_ejecutado = fin - inicio
+        print("El tiempo ejecutado para esta opcion es: ",tiempo_ejecutado)
+        op = 5
+
