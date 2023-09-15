@@ -1,0 +1,14 @@
+
+def fibo(num):
+    fibonacci = [None]*20
+    
+    fibonacci[0] = 1
+    fibonacci[1] = 1
+    for i in range(2,n+1):
+
+        fibonacci[i] = fibonacci[i-2]+fibonacci[i-1]
+
+    print("El resultado de la serie fibonacci en la posision que eligio es: ",fibonacci[num])
+    
+n = int(input("Ingrese la posision del numero fibonacci que desea encontrar: "))
+fibo(n)
