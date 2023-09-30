@@ -1,0 +1,12 @@
+def Hanoi(n):
+    
+    if n == 1:
+        print(f"Se mueve el disco 1 de la torre origen a la torre destino")
+        return
+    else: 
+        Hanoi(n-1)
+        print(f"Se mueve el disco {n} de la torre origen a la torre aux")
+        Hanoi(n-1)
+        
+n = int(input("Ingrese la cantidad de discos que desea usar: "))
+Hanoi(n)
