@@ -1,0 +1,19 @@
+def burbujaR(x, n):
+    # Caso base: si la longitud del arreglo es 1, ya está ordenado.
+    if n == 1:
+        return
+
+    # Realiza una pasada a través del arreglo y compara elementos adyacentes.
+    for i in range(n - 1):
+        # Si el elemento actual es mayor que el siguiente, se intercambian.
+        if x[i] > x[i + 1]:
+            x[i], x[i + 1] = x[i + 1], x[i]
+
+    # Llama recursivamente a la función.
+    burbujaR(x, n - 1)
+
+# Ejemplo
+x = [5, 3, 8, 4, 6]
+n = len(x)
+burbujaR(x, n)
+print(x)  # Imprime la lista ordenada
