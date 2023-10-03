@@ -1,0 +1,20 @@
+def Burbuja(x,n):
+    #Dara el recorrido de las comparaciones
+    for i in range (0,n):
+        #Hara las comparaciones de los números
+        for j in range (0,n-1):
+            #Hacemos las comparaciones
+            if x[j]>x[j+1]:
+                #Guardamos el valor de la posicion j+1
+                AUX=x[j]
+                #Cambiamos de lugar el numero en la poisicion j
+                x[j]=x[j+1]
+                #Guardamos el siguiente valor que cambiaremos
+                x[j+1]=AUX
+    #Indicamos cual es el valor que nosotros returnaremos de esta funcion
+    return x
+       
+
+x=[5, 3, 8, 4, 6]
+n=len(x)
+print(Burbuja(x,n))
